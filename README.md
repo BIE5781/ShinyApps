@@ -2,7 +2,7 @@
 
 Este repositório reúne aplicativos interativos em R para apoiar as atividades da disciplina **BIE5781 - Introdução à modelagem estatística na pesquisa em biologia**. A proposta é explorar ideias de modelagem estatística manipulando parâmetros e observando, em tempo real, como eles afetam ajustes, resíduos e previsões.
 
-## Aplicativo disponível
+## Aplicativos
 
 ### OLS: ajuste de uma reta por mínimos quadrados
 
