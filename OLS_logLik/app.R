@@ -22,10 +22,10 @@ tab1 <-
         sec = as.numeric(str_extract(Midpoint, "(?<=′|'|´)\\s*\\d+")),
         decimal_deg = deg + (min / 60) + (sec / 3600),
         Radians = decimal_deg * (pi / 180)) |>
-    select(-deg, -min, -sec, -decimal_deg) |>
+    dplyr::select(-deg, -min, -sec, -decimal_deg) |>
     mutate(y = Modules * km.por.modulo / Degrees,   # km por grau
            x = (sin(Radians))^2) |>
-    select(X, x, y)
+    dplyr::select(X, x, y)
 
 ## Fulcro: ponto (média de x, média de y)
 x.m <- mean(tab1$x)
